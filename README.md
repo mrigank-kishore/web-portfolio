@@ -43,55 +43,33 @@ A modern, professional portfolio website for a Principal Cloud Architect built w
 
 ## Deployment to GitHub Pages
 
+The project is configured for automatic deployment using GitHub Actions.
+
+### Automatic Deployment (Recommended)
+1. **Enable GitHub Pages** in your repository settings:
+   - Go to Settings → Pages
+   - Source: Deploy from a branch
+   - Branch: `gh-pages` / `/(root)`
+
+2. **Push to main branch** - The workflow will automatically build and deploy
+
+### Manual Deployment
 1. **Build and Export**
    ```bash
    npm run build && npm run export
    ```
 
-2. **The `out` folder will contain the static files**
+2. **Upload contents of `out/` folder** to GitHub Pages branch
 
-3. **Upload the contents of the `out` folder to your GitHub Pages branch (usually `gh-pages`)**
+### Live URL
+Once deployed, your portfolio will be available at:  
+`https://mrigank-kishore.github.io/web-portfolio/`
 
-4. **Or use GitHub Actions for automatic deployment**
-
-### GitHub Actions Workflow (optional)
-
-Create `.github/workflows/deploy.yml`:
-
-```yaml
-name: Deploy to GitHub Pages
-
-on:
-  push:
-    branches: [ main ]
-
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build
-        run: npm run build
-
-      - name: Export
-        run: npm run export
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out
-```
+### GitHub Actions Workflow
+The `.github/workflows/deploy.yml` handles:
+- Building the Next.js app
+- Exporting static files
+- Deploying to GitHub Pages branch
 
 ## Project Structure
 
