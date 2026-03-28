@@ -19,7 +19,7 @@ export default function Chatbot() {
   const [profile, setProfile] = useState<any>(null)
 
   useEffect(() => {
-    fetch('/profile.json')
+    fetch('/web-portfolio/profile.json')
       .then(res => res.json())
       .then(data => setProfile(data))
   }, [])
