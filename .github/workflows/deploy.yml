@@ -25,13 +25,9 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Export static files
-        run: npm run export
-
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
-          cname: web-portfolio.pages.dev  # Optional: if you have a custom domain
