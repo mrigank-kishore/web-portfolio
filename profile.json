@@ -1,0 +1,95 @@
+{
+  "name": "Mrigank Kishore Varma",
+  "title": "Principal Cloud Architect | AI/ML | Cloud Transformation",
+  "tagline": "Designing scalable, cost-efficient, AI-driven cloud systems",
+  "experience_years": 16,
+  "location": "Pune, India",
+  "email": "mrigank@example.com",
+  "linkedin": "https://linkedin.com/in/mrigank-varma",
+  "skills": {
+    "Cloud": ["AWS", "Azure", "Kubernetes", "Docker"],
+    "Data & AI": ["AWS Glue", "Apache Spark", "SageMaker", "TensorFlow"],
+    "DevOps": ["CI/CD", "GitHub Actions", "Terraform", "Jenkins"],
+    "Programming": ["Python", "Java", "TypeScript", "Node.js"]
+  },
+  "experience": [
+    {
+      "company": "Sterling / First Advantage",
+      "role": "Principal Architect",
+      "period": "2020 - Present",
+      "achievements": [
+        "Led cloud transformation reducing TCO by 80%",
+        "Designed landing zones for 40+ teams",
+        "Implemented AI/ML systems for document processing"
+      ]
+    },
+    {
+      "company": "Tech Mahindra",
+      "role": "Solution Architect",
+      "period": "2015 - 2020",
+      "achievements": [
+        "Architected microservices on AWS",
+        "Optimized data pipelines from hours to minutes",
+        "Led DevOps transformation"
+      ]
+    },
+    {
+      "company": "Capgemini",
+      "role": "IT Architect",
+      "period": "2010 - 2015",
+      "achievements": [
+        "Designed enterprise architectures",
+        "Implemented CI/CD pipelines",
+        "Managed cloud migrations"
+      ]
+    },
+    {
+      "company": "Wipro / IBM / Patni",
+      "role": "Various Roles",
+      "period": "2008 - 2010",
+      "achievements": [
+        "Early career development",
+        "Learned foundational technologies",
+        "Contributed to various projects"
+      ]
+    }
+  ],
+  "achievements": [
+    "Reduced cloud costs by 80% through optimization",
+    "Architected solutions for 40+ development teams",
+    "Optimized data pipelines from hours to minutes",
+    "Implemented AI/ML solutions including OCR, NLP, and ETA prediction"
+  ],
+  "projects": [
+    {
+      "name": "Cloud Migration Platform",
+      "problem": "Manual cloud migration processes were time-consuming and error-prone",
+      "solution": "Built automated platform using AWS services and Terraform",
+      "impact": "Reduced migration time by 70% and improved reliability"
+    },
+    {
+      "name": "Internal Developer Platform",
+      "problem": "Teams struggled with inconsistent development environments",
+      "solution": "Created self-service platform with Kubernetes and CI/CD",
+      "impact": "Increased developer productivity by 50%"
+    },
+    {
+      "name": "AI-based Document Processing System",
+      "problem": "Manual document processing was slow and costly",
+      "solution": "Implemented OCR and NLP using AWS SageMaker",
+      "impact": "Automated 90% of document processing tasks"
+    },
+    {
+      "name": "Real-time Data Pipeline",
+      "problem": "Data processing took hours, delaying insights",
+      "solution": "Built real-time pipeline with Apache Kafka and Spark",
+      "impact": "Reduced processing time to minutes, enabling real-time analytics"
+    }
+  ],
+  "chatbot_responses": {
+    "what does he do": "Mrigank is a Principal Cloud Architect specializing in cloud transformation, AI/ML, and scalable system design.",
+    "what are his skills": "He has expertise in Cloud (AWS, Azure, Kubernetes), Data & AI (Glue, Spark, SageMaker), DevOps (CI/CD, GitHub Actions), and Programming (Python, Java, TypeScript).",
+    "explain his aws experience": "With 16+ years in IT, Mrigank has extensive AWS experience including cloud migrations, landing zone design, and AI/ML implementations using services like SageMaker and Glue.",
+    "what ai work has he done": "He has implemented AI/ML solutions including OCR for document processing, NLP for text analysis, and predictive models for ETA estimation using TensorFlow and AWS services."
+  }
+}
