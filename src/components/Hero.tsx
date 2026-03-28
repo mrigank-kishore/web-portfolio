@@ -33,7 +33,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-lg text-gray-500 dark:text-gray-400 mb-8"
         >
-          "Designing scalable, cost-efficient, AI-driven cloud systems"
+          &ldquo;Designing scalable, cost-efficient, AI-driven cloud systems&rdquo;
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

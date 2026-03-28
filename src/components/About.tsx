@@ -17,7 +17,7 @@ export default function About() {
           With over 16 years of experience in IT architecture and cloud technologies,
           I am a Principal Cloud Architect specializing in cloud transformation, AI/ML,
           and designing scalable, cost-efficient systems. I have led major cloud migrations,
-          implemented cutting-edge AI solutions, and transformed organizations' cloud strategies
+          implemented cutting-edge AI solutions, and transformed organizations&apos; cloud strategies
           across AWS, Azure, and Kubernetes environments.
         </p>
       </motion.div>
