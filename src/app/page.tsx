@@ -1,4 +1,5 @@
 import Hero from '@/components/Hero'
+import Navigation from '@/components/Navigation'
 import About from '@/components/About'
 import Experience from '@/components/Experience'
 import Skills from '@/components/Skills'
@@ -10,6 +11,7 @@ import Chatbot from '@/components/Chatbot'
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <Navigation />
       <Hero />
       <About />
       <Experience />

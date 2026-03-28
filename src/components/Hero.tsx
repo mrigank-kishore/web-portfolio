@@ -2,13 +2,11 @@
 
 import { motion } from 'framer-motion'
 import { ChevronDown, Download, Mail, ExternalLink } from 'lucide-react'
-import { useTheme } from 'next-themes'
 
 export default function Hero() {
-  const { theme, setTheme } = useTheme()
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
       <div className="absolute inset-0" style={{ background: 'var(--bg-gradient)' }} />
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <motion.h1
@@ -54,15 +52,6 @@ export default function Hero() {
             Contact
           </button>
         </motion.div>
-        <motion.button
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 1 }}
-          onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-          className="mb-8 px-4 py-2 rounded-lg transition-colors" style={{ backgroundColor: 'var(--border)', color: 'var(--text-primary)' }} onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--text-secondary)'} onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--border)'}
-        >
-          Toggle {theme === 'dark' ? 'Light' : 'Dark'} Mode
-        </motion.button>
       </div>
       <motion.div
         initial={{ opacity: 0 }}

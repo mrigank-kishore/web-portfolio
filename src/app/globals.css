@@ -7,17 +7,29 @@
     scroll-behavior: smooth;
   }
 
+  body {
+    background-image: 
+      radial-gradient(circle at 1px 1px, rgba(0,0,0,0.05) 1px, transparent 0);
+    background-size: 20px 20px;
+  }
+
+  .dark body {
+    background-image: 
+      radial-gradient(circle at 1px 1px, rgba(255,255,255,0.05) 1px, transparent 0);
+    background-size: 20px 20px;
+  }
+
   :root {
-    /* Beach theme for light mode */
-    --bg-primary: #fef7e0; /* Sandy yellow */
-    --bg-secondary: #e0f2fe; /* Light blue */
-    --bg-gradient: linear-gradient(to bottom right, #fef7e0, #e0f2fe);
-    --text-gradient: linear-gradient(to right, #f59e0b, #ea580c);
-    --text-primary: #1e3a8a; /* Dark blue */
-    --text-secondary: #374151; /* Gray */
-    --accent: #f59e0b; /* Amber */
-    --accent-hover: #d97706; /* Darker amber */
-    --border: #d1d5db; /* Light gray */
+    /* Professional light theme */
+    --bg-primary: #ffffff; /* White */
+    --bg-secondary: #f8fafc; /* Very light gray */
+    --bg-gradient: linear-gradient(to bottom right, #ffffff, #f8fafc);
+    --text-gradient: linear-gradient(to right, #1e40af, #3b82f6);
+    --text-primary: #1f2937; /* Dark gray */
+    --text-secondary: #6b7280; /* Medium gray */
+    --accent: #3b82f6; /* Blue */
+    --accent-hover: #2563eb; /* Darker blue */
+    --border: #e5e7eb; /* Light gray */
   }
 
   .dark {
