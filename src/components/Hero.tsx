@@ -9,13 +9,14 @@ export default function Hero() {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800" />
+      <div className="absolute inset-0" style={{ background: 'var(--bg-gradient)' }} />
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+          className="text-5xl md:text-7xl font-bold mb-4 bg-clip-text text-transparent"
+          style={{ backgroundImage: 'var(--text-gradient)' }}
         >
           Mrigank Kishore Varma
         </motion.h1>
@@ -23,7 +24,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-2"
+          className="text-xl md:text-2xl text-[var(--text-secondary)] mb-2"
         >
           Principal Cloud Architect | AI/ML | Cloud Transformation
         </motion.p>
@@ -31,7 +32,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-lg text-gray-500 dark:text-gray-400 mb-8"
+          className="text-lg text-[var(--text-secondary)] mb-8"
         >
           &ldquo;Designing scalable, cost-efficient, AI-driven cloud systems&rdquo;
         </motion.p>
@@ -41,14 +42,14 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
         >
-          <button className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors">
+          <button className="px-8 py-3 rounded-lg font-semibold transition-colors" style={{ backgroundColor: 'var(--accent)', color: 'white' }} onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--accent-hover)'} onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--accent)'}>
             View Projects
           </button>
-          <button className="px-8 py-3 border border-blue-600 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white rounded-lg font-semibold transition-colors flex items-center gap-2">
+          <a href="/resume.pdf" download className="px-8 py-3 border rounded-lg font-semibold transition-colors flex items-center gap-2" style={{ borderColor: 'var(--accent)', color: 'var(--accent)' }} onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--accent)'; e.currentTarget.style.color = 'white'; }} onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = 'var(--accent)'; }}>
             <Download size={20} />
             Download Resume
-          </button>
-          <button className="px-8 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg font-semibold transition-colors flex items-center gap-2">
+          </a>
+          <button className="px-8 py-3 border rounded-lg font-semibold transition-colors flex items-center gap-2" style={{ borderColor: 'var(--border)', color: 'var(--text-secondary)' }} onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--border)'} onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}>
             <Mail size={20} />
             Contact
           </button>
@@ -58,7 +59,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1 }}
           onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-          className="mb-8 px-4 py-2 glass rounded-lg"
+          className="mb-8 px-4 py-2 rounded-lg transition-colors" style={{ backgroundColor: 'var(--border)', color: 'var(--text-primary)' }} onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--text-secondary)'} onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--border)'}
         >
           Toggle {theme === 'dark' ? 'Light' : 'Dark'} Mode
         </motion.button>

@@ -6,6 +6,32 @@
   html {
     scroll-behavior: smooth;
   }
+
+  :root {
+    /* Beach theme for light mode */
+    --bg-primary: #fef7e0; /* Sandy yellow */
+    --bg-secondary: #e0f2fe; /* Light blue */
+    --bg-gradient: linear-gradient(to bottom right, #fef7e0, #e0f2fe);
+    --text-gradient: linear-gradient(to right, #f59e0b, #ea580c);
+    --text-primary: #1e3a8a; /* Dark blue */
+    --text-secondary: #374151; /* Gray */
+    --accent: #f59e0b; /* Amber */
+    --accent-hover: #d97706; /* Darker amber */
+    --border: #d1d5db; /* Light gray */
+  }
+
+  .dark {
+    /* Sci-fi theme for dark mode */
+    --bg-primary: #0f0f23; /* Very dark blue */
+    --bg-secondary: #1a1a2e; /* Dark purple-blue */
+    --bg-gradient: linear-gradient(to bottom right, #0f0f23, #1a1a2e);
+    --text-gradient: linear-gradient(to right, #8b5cf6, #06b6d4);
+    --text-primary: #00ff88; /* Neon green */
+    --text-secondary: #b794f6; /* Light purple */
+    --accent: #8b5cf6; /* Purple */
+    --accent-hover: #7c3aed; /* Darker purple */
+    --border: #374151; /* Gray */
+  }
 }
 
 @layer components {
