@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import { MessageCircle, X, Send } from 'lucide-react'
+import { profile as fallbackProfile } from '@/data/profile'
 
 interface Message {
   id: number
@@ -13,15 +14,16 @@ interface Message {
 export default function Chatbot() {
   const [isOpen, setIsOpen] = useState(false)
   const [messages, setMessages] = useState<Message[]>([
-    { id: 1, text: "Hi! I'm here to answer questions about Mrigank's experience and skills. What would you like to know?", isUser: false }
+    { id: 1, text: fallbackProfile.chatbotResponses.intro, isUser: false }
   ])
   const [input, setInput] = useState('')
-  const [profile, setProfile] = useState<any>(null)
+  const [profile, setProfile] = useState<any>(fallbackProfile)
 
   useEffect(() => {
-    fetch('/web-portfolio/profile.json')
+    fetch('./profile.json')
       .then(res => res.json())
       .then(data => setProfile(data))
+      .catch(() => setProfile(fallbackProfile))
   }, [])
 
   const handleSend = () => {
@@ -41,17 +43,19 @@ export default function Chatbot() {
     let response = "I'm sorry, I don't have information about that. Try asking about his skills, experience, or projects."
 
     if (lowerInput.includes('what does he do') || lowerInput.includes('who is he')) {
-      response = profile.chatbot_responses['what does he do']
+      response = profile.chatbotResponses?.role ?? fallbackProfile.chatbotResponses.role
     } else if (lowerInput.includes('skills') || lowerInput.includes('expertise')) {
-      response = profile.chatbot_responses['what are his skills']
+      response = profile.chatbotResponses?.skills ?? fallbackProfile.chatbotResponses.skills
     } else if (lowerInput.includes('aws') || lowerInput.includes('amazon')) {
-      response = profile.chatbot_responses['explain his aws experience']
+      response = profile.chatbotResponses?.aws ?? fallbackProfile.chatbotResponses.aws
     } else if (lowerInput.includes('ai') || lowerInput.includes('ml') || lowerInput.includes('machine learning')) {
-      response = profile.chatbot_responses['what ai work has he done']
+      response = profile.chatbotResponses?.ai ?? fallbackProfile.chatbotResponses.ai
     } else if (lowerInput.includes('experience') || lowerInput.includes('years')) {
-      response = `He has over ${profile.experience_years} years of experience in IT architecture and cloud technologies.`
+      response = `He has over ${profile.experienceYears ?? fallbackProfile.experienceYears} years of experience in IT architecture and cloud technologies.`
     } else if (lowerInput.includes('location') || lowerInput.includes('where')) {
-      response = `He is based in ${profile.location}.`
+      response = `He is based in ${profile.location ?? fallbackProfile.location}.`
+    } else if (lowerInput.includes('impact') || lowerInput.includes('achievement') || lowerInput.includes('outcome')) {
+      response = profile.chatbotResponses?.impact ?? fallbackProfile.chatbotResponses.impact
     }
 
     setTimeout(() => {
@@ -111,7 +115,7 @@ export default function Chatbot() {
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   onKeyPress={(e) => e.key === 'Enter' && handleSend()}
-                  placeholder="Ask about Mrigank..."
+                  placeholder="Ask about cloud, AI, migrations..."
                   className="flex-1 px-3 py-2 border dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
                 />
                 <button

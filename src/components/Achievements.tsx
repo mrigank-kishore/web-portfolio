@@ -2,29 +2,9 @@
 
 import { motion } from 'framer-motion'
 import { Trophy, TrendingDown, Users, Zap } from 'lucide-react'
+import { profile } from '@/data/profile'
 
-const achievements = [
-  {
-    icon: TrendingDown,
-    title: "80% Cloud Cost Reduction",
-    description: "Optimized cloud infrastructure and implemented cost-effective solutions"
-  },
-  {
-    icon: Users,
-    title: "40+ Teams Architecture",
-    description: "Designed scalable landing zones and architectures for multiple development teams"
-  },
-  {
-    icon: Zap,
-    title: "Data Pipeline Optimization",
-    description: "Reduced data processing time from hours to minutes using modern technologies"
-  },
-  {
-    icon: Trophy,
-    title: "AI/ML Implementations",
-    description: "Successfully deployed OCR, NLP, and predictive models for various use cases"
-  }
-]
+const icons = [TrendingDown, Users, Zap, Trophy]
 
 export default function Achievements() {
   return (
@@ -36,11 +16,11 @@ export default function Achievements() {
         viewport={{ once: true }}
         className="text-4xl font-bold text-center mb-12"
       >
-        Key Achievements
+        Impact Highlights
       </motion.h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {achievements.map((achievement, index) => {
-          const Icon = achievement.icon
+        {profile.achievements.map((achievement, index) => {
+          const Icon = icons[index]
           return (
             <motion.div
               key={index}

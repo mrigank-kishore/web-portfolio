@@ -8,11 +8,11 @@ export default function Navigation() {
   const { theme, setTheme } = useTheme()
 
   const navItems = [
-    { name: 'Home', href: '#' },
+    { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Experience', href: '#experience' },
     { name: 'Skills', href: '#skills' },
-    { name: 'Achievements', href: '#achievements' },
+    { name: 'Impact', href: '#achievements' },
     { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' },
   ]

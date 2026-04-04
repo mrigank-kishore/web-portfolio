@@ -2,18 +2,19 @@ import type { Metadata } from 'next'
 import { Inter, Playfair_Display } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
+import { profile } from '@/data/profile'
 
 const inter = Inter({ subsets: ['latin'] })
 const playfair = Playfair_Display({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Mrigank Kishore Varma - Principal Cloud Architect',
-  description: 'Designing scalable, cost-efficient, AI-driven cloud systems',
-  keywords: 'Cloud Architect, AWS, Azure, AI/ML, Cloud Transformation',
-  authors: [{ name: 'Mrigank Kishore Varma' }],
+  title: `${profile.name} - ${profile.title}`,
+  description: profile.tagline,
+  keywords: 'Principal Cloud Architect, AWS, Azure, Platform Engineering, AI/ML, Cloud Transformation, Microservices, MLOps',
+  authors: [{ name: profile.name }],
   openGraph: {
-    title: 'Mrigank Kishore Varma - Principal Cloud Architect',
-    description: 'Designing scalable, cost-efficient, AI-driven cloud systems',
+    title: `${profile.name} - ${profile.title}`,
+    description: profile.tagline,
     type: 'website',
   },
 }

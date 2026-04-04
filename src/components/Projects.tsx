@@ -2,33 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { ExternalLink } from 'lucide-react'
-
-const projects = [
-  {
-    name: "Cloud Migration Platform",
-    problem: "Manual cloud migration processes were time-consuming and error-prone",
-    solution: "Built automated platform using AWS services and Terraform",
-    impact: "Reduced migration time by 70% and improved reliability"
-  },
-  {
-    name: "Internal Developer Platform",
-    problem: "Teams struggled with inconsistent development environments",
-    solution: "Created self-service platform with Kubernetes and CI/CD",
-    impact: "Increased developer productivity by 50%"
-  },
-  {
-    name: "AI-based Document Processing System",
-    problem: "Manual document processing was slow and costly",
-    solution: "Implemented OCR and NLP using AWS SageMaker",
-    impact: "Automated 90% of document processing tasks"
-  },
-  {
-    name: "Real-time Data Pipeline",
-    problem: "Data processing took hours, delaying insights",
-    solution: "Built real-time pipeline with Apache Kafka and Spark",
-    impact: "Reduced processing time to minutes, enabling real-time analytics"
-  }
-]
+import { profile } from '@/data/profile'
 
 export default function Projects() {
   return (
@@ -40,10 +14,10 @@ export default function Projects() {
         viewport={{ once: true }}
         className="text-4xl font-bold text-center mb-12"
       >
-        Projects & Case Studies
+        Selected Case Studies
       </motion.h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {projects.map((project, index) => (
+        {profile.projects.map((project, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 20 }}
@@ -54,7 +28,7 @@ export default function Projects() {
           >
             <div className="flex justify-between items-start mb-4">
               <h3 className="text-xl font-semibold">{project.name}</h3>
-              <ExternalLink size={20} className="text-blue-600 dark:text-blue-400" />
+              <ExternalLink size={20} className="text-blue-600 dark:text-blue-400" aria-hidden="true" />
             </div>
             <div className="space-y-3">
               <div>

@@ -3,56 +3,7 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { ChevronDown, ChevronUp } from 'lucide-react'
-
-interface ExperienceItem {
-  company: string
-  role: string
-  period: string
-  achievements: string[]
-}
-
-const experiences: ExperienceItem[] = [
-  {
-    company: "Sterling / First Advantage",
-    role: "Principal Architect",
-    period: "2020 - Present",
-    achievements: [
-      "Led cloud transformation reducing TCO by 80%",
-      "Designed landing zones for 40+ teams",
-      "Implemented AI/ML systems for document processing"
-    ]
-  },
-  {
-    company: "Tech Mahindra",
-    role: "Solution Architect",
-    period: "2015 - 2020",
-    achievements: [
-      "Architected microservices on AWS",
-      "Optimized data pipelines from hours to minutes",
-      "Led DevOps transformation"
-    ]
-  },
-  {
-    company: "Capgemini",
-    role: "IT Architect",
-    period: "2010 - 2015",
-    achievements: [
-      "Designed enterprise architectures",
-      "Implemented CI/CD pipelines",
-      "Managed cloud migrations"
-    ]
-  },
-  {
-    company: "Wipro / IBM / Patni",
-    role: "Various Roles",
-    period: "2008 - 2010",
-    achievements: [
-      "Early career development",
-      "Learned foundational technologies",
-      "Contributed to various projects"
-    ]
-  }
-]
+import { profile } from '@/data/profile'
 
 export default function Experience() {
   const [expanded, setExpanded] = useState<number | null>(null)
@@ -69,7 +20,7 @@ export default function Experience() {
         Experience
       </motion.h2>
       <div className="space-y-6">
-        {experiences.map((exp, index) => (
+        {profile.experience.map((exp, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
@@ -83,7 +34,7 @@ export default function Experience() {
               <div>
                 <h3 className="text-xl font-semibold">{exp.role}</h3>
                 <p className="text-blue-600 dark:text-blue-400">{exp.company}</p>
-                <p className="text-sm text-gray-500 dark:text-gray-400">{exp.period}</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">{exp.period} | {exp.location}</p>
               </div>
               {expanded === index ? <ChevronUp size={24} /> : <ChevronDown size={24} />}
             </div>
