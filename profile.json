@@ -1,95 +1,160 @@
 {
   "name": "Mrigank Kishore Varma",
-  "title": "Principal Cloud Architect | AI/ML | Cloud Transformation",
-  "tagline": "Designing scalable, cost-efficient, AI-driven cloud systems",
-  "experience_years": 16,
+  "title": "Principal Cloud Architect",
+  "headline": "Cloud Transformation | AI/ML | Platform Architecture",
+  "tagline": "Architecting secure, scalable cloud platforms that reduce cost and accelerate delivery.",
+  "experienceYears": 16,
   "location": "Pune, India",
+  "phone": "+91 98337 21131",
   "email": "mrigank.online@gmail.com",
-  "linkedin": "https://linkedin.com/in/mrigank-varma",
+  "linkedin": "https://linkedin.com/in/mrvarma",
+  "linkedinLabel": "linkedin.com/in/mrvarma",
+  "summary": "Principal Cloud Architect with 16+ years of experience driving enterprise IT transformation across AWS, Azure, microservices, data platforms, and AI-enabled solutions. He specializes in modernizing complex workloads into secure, cost-optimized cloud-native systems that scale across teams and products.",
+  "highlights": [
+    "Architected Azure landing zones and multi-account foundations supporting 40+ engineering teams with centralized networking and governance.",
+    "Led migrations from on-prem and Azure workloads to AWS, reducing total cost of ownership by up to 80%.",
+    "Optimized critical data pipelines from roughly 4 hours to minutes, enabling near real-time analytics and faster business decisions.",
+    "Delivered ML-powered solutions including ETA prediction, OCR automation, NLP-based text extraction, and an internal ChatGPT experience for teams."
+  ],
   "skills": {
-    "Cloud": ["AWS", "Azure", "Kubernetes", "Docker"],
-    "Data & AI": ["AWS Glue", "Apache Spark", "SageMaker", "TensorFlow"],
-    "DevOps": ["CI/CD", "GitHub Actions", "Terraform", "Jenkins"],
-    "Programming": ["Python", "Java", "TypeScript", "Node.js"]
+    "Cloud & Infrastructure": [
+      "AWS",
+      "Azure",
+      "Kubernetes",
+      "Amazon ECS",
+      "AWS Lambda",
+      "Amazon S3",
+      "Amazon RDS",
+      "Step Functions",
+      "AKS",
+      "Landing Zones",
+      "ExpressRoute"
+    ],
+    "Architecture": [
+      "Microservices",
+      "Event-driven Systems",
+      "Serverless",
+      "SOA",
+      "Cloud-native Platforms",
+      "Distributed Systems",
+      "MLOps"
+    ],
+    "Data & AI/ML": [
+      "AWS Glue",
+      "Apache Spark",
+      "Lake Formation",
+      "Kinesis",
+      "Kafka",
+      "AWS DMS",
+      "SageMaker",
+      "Textract",
+      "Comprehend",
+      "Azure Vision"
+    ],
+    "DevOps, Security & Code": [
+      "GitHub Actions",
+      "Jenkins",
+      "SonarQube",
+      "JFrog",
+      "AWS CDK",
+      "Bicep",
+      "CloudFormation",
+      "IAM",
+      "Cloud Custodian",
+      "Java",
+      "Python",
+      "TypeScript/JavaScript"
+    ]
   },
   "experience": [
     {
       "company": "Sterling / First Advantage",
       "role": "Principal Architect",
-      "period": "2020 - Present",
+      "period": "2019 - Present",
+      "location": "Work From Home",
       "achievements": [
-        "Led cloud transformation reducing TCO by 80%",
-        "Designed landing zones for 40+ teams",
-        "Implemented AI/ML systems for document processing"
+        "Architected Azure landing zones and multi-account setups with centralized networking, enabling 40+ engineering teams to deploy secure and scalable products.",
+        "Led migration from on-prem and Azure workloads to AWS, reducing TCO by up to 80% while improving scalability and security.",
+        "Defined technology roadmaps, facilitated cross-team design reviews, and governed cloud adoption across the organization.",
+        "Optimized data pipelines from 4 hours to minutes to support near real-time analytics for business-critical decisions.",
+        "Implemented ML-based solutions for ETA prediction, OCR automation, NLP text extraction, and an internal ChatGPT experience.",
+        "Evangelized cloud-native delivery, DevOps CI/CD, tracing, and container adoption while contributing to a self-service internal developer platform on Azure."
       ]
     },
     {
       "company": "Tech Mahindra",
       "role": "Solution Architect",
-      "period": "2015 - 2020",
+      "period": "2017 - 2019",
+      "location": "Pune",
       "achievements": [
-        "Architected microservices on AWS",
-        "Optimized data pipelines from hours to minutes",
-        "Led DevOps transformation"
+        "Designed and built an internal developer platform for building and deploying microservices on AWS with multi-tenant CI/CD automation.",
+        "Supported clients including Telia, Verizon, and AT&T as an AWS and microservices architect for cloud-native modernization.",
+        "Established containerization, DevOps practices, and streaming-based data synchronization patterns.",
+        "Delivered modern CI/CD approaches including blue-green and canary deployments with performance improvements."
       ]
     },
     {
       "company": "Capgemini",
-      "role": "IT Architect",
-      "period": "2010 - 2015",
+      "role": "IT Architect / Senior Consultant",
+      "period": "2012 - 2017",
+      "location": "Mumbai",
       "achievements": [
-        "Designed enterprise architectures",
-        "Implemented CI/CD pipelines",
-        "Managed cloud migrations"
+        "Represented the IBM technology stack within a global architect leadership team.",
+        "Led digital platform modernization using IBM cloud and cloud-native architectural approaches.",
+        "Created pre-sales solution designs across the IBM product suite.",
+        "Architected solutions for Cochlear, Dr. Reddy, Johnson & Johnson, and HP Global Commerce."
       ]
     },
     {
-      "company": "Wipro / IBM / Patni",
-      "role": "Various Roles",
-      "period": "2008 - 2010",
+      "company": "Wipro, Patni & IBM",
+      "role": "SME / Lead Developer / Associate",
+      "period": "2008 - 2012",
+      "location": "Delhi",
       "achievements": [
-        "Early career development",
-        "Learned foundational technologies",
-        "Contributed to various projects"
+        "Architected portals for the Government of India and enterprise clients including Airtel and Neptune Orient Lines.",
+        "Delivered secure IBM WebSphere-based solutions with SSO, portal integrations, and multichannel application capabilities.",
+        "Implemented mobile portals, ESB integrations, and billing-related systems during early enterprise modernization work."
       ]
     }
   ],
   "achievements": [
-    "Reduced cloud costs by 80% through optimization",
-    "Architected solutions for 40+ development teams",
-    "Optimized data pipelines from hours to minutes",
-    "Implemented AI/ML solutions including OCR, NLP, and ETA prediction"
+    "Reduced TCO by up to 80% through cloud migration and architecture optimization.",
+    "Built platform foundations adopted by 40+ engineering teams.",
+    "Reduced data processing turnaround from around 4 hours to minutes.",
+    "Delivered production AI capabilities including OCR, NLP, ETA prediction, and internal GenAI workflows."
   ],
   "projects": [
     {
-      "name": "Cloud Migration Platform",
-      "problem": "Manual cloud migration processes were time-consuming and error-prone",
-      "solution": "Built automated platform using AWS services and Terraform",
-      "impact": "Reduced migration time by 70% and improved reliability"
+      "name": "Enterprise Landing Zone Program",
+      "problem": "Engineering teams needed a secure, scalable cloud foundation with consistent governance and networking patterns.",
+      "solution": "Architected Azure landing zones and multi-account setups with centralized networking, security controls, and platform guardrails.",
+      "impact": "Enabled 40+ engineering teams to launch and scale products on a governed platform."
     },
     {
-      "name": "Internal Developer Platform",
-      "problem": "Teams struggled with inconsistent development environments",
-      "solution": "Created self-service platform with Kubernetes and CI/CD",
-      "impact": "Increased developer productivity by 50%"
+      "name": "Cloud Migration and Cost Optimization",
+      "problem": "Legacy workloads running across on-prem and Azure created cost, scalability, and operational inefficiencies.",
+      "solution": "Led migration to AWS and re-architected workloads for cost-optimized, secure, cloud-native operation.",
+      "impact": "Reduced total cost of ownership by up to 80% while improving scalability and security posture."
     },
     {
-      "name": "AI-based Document Processing System",
-      "problem": "Manual document processing was slow and costly",
-      "solution": "Implemented OCR and NLP using AWS SageMaker",
-      "impact": "Automated 90% of document processing tasks"
+      "name": "Near Real-Time Data Platform",
+      "problem": "Business-critical data pipelines took hours to process, delaying analytics and decision-making.",
+      "solution": "Redesigned data flows using modern cloud data services and streaming-oriented patterns.",
+      "impact": "Cut processing time from around 4 hours to minutes and unlocked near real-time insight."
     },
     {
-      "name": "Real-time Data Pipeline",
-      "problem": "Data processing took hours, delaying insights",
-      "solution": "Built real-time pipeline with Apache Kafka and Spark",
-      "impact": "Reduced processing time to minutes, enabling real-time analytics"
+      "name": "AI Automation and Internal GenAI",
+      "problem": "Manual document and text-heavy workflows limited operational speed and insight.",
+      "solution": "Delivered OCR automation, NLP extraction, ETA prediction, and an internal ChatGPT experience integrated with team workflows.",
+      "impact": "Introduced practical AI capabilities into day-to-day enterprise operations and platform usage."
     }
   ],
-  "chatbot_responses": {
-    "what does he do": "Mrigank is a Principal Cloud Architect specializing in cloud transformation, AI/ML, and scalable system design.",
-    "what are his skills": "He has expertise in Cloud (AWS, Azure, Kubernetes), Data & AI (Glue, Spark, SageMaker), DevOps (CI/CD, GitHub Actions), and Programming (Python, Java, TypeScript).",
-    "explain his aws experience": "With 16+ years in IT, Mrigank has extensive AWS experience including cloud migrations, landing zone design, and AI/ML implementations using services like SageMaker and Glue.",
-    "what ai work has he done": "He has implemented AI/ML solutions including OCR for document processing, NLP for text analysis, and predictive models for ETA estimation using TensorFlow and AWS services."
+  "chatbotResponses": {
+    "intro": "Hi! I can answer questions about Mrigank's architecture experience, cloud migrations, AI work, and platform leadership.",
+    "role": "Mrigank is a Principal Cloud Architect focused on enterprise cloud transformation, platform architecture, AI/ML adoption, and modern cloud-native delivery.",
+    "skills": "His strongest areas include AWS and Azure architecture, landing zones, microservices, DevOps, data platforms, MLOps, and AI services such as SageMaker, Textract, Comprehend, and Azure Vision.",
+    "aws": "He has led migrations from on-prem and Azure to AWS, designed multi-account foundations, and used services like ECS, Lambda, S3, RDS, Step Functions, CDK, Glue, and SageMaker.",
+    "ai": "His AI work includes ETA prediction, OCR automation, NLP-based text extraction, internal ChatGPT integration, and production-oriented MLOps patterns.",
+    "impact": "Key outcomes include up to 80% TCO reduction, cloud platforms used by 40+ engineering teams, and data pipelines improved from 4 hours to minutes."
   }
 }
